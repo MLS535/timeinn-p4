@@ -1,0 +1,24 @@
+{
+  "name": "TimeInn",
+  "version": "1.0.0",
+  "description": "<h1>TimeInn</h1>",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MLS535/TimeInn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MLS535/TimeInn/issues"
+  },
+  "homepage": "https://github.com/MLS535/TimeInn#readme",
+  "devDependencies": {
+    "mocha": "^9.1.3"
+  }
+}

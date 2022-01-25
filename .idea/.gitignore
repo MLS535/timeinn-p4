@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../:\FP\Segundo año\Proyectos DIW Y DWEC\TimeInn\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Ignored folders
+node_modules/

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bfddb8114a.js" crossorigin="anonymous"></script>
+    <script src="js/project.js"></script>
+    <script defer type="module" src="js/renderEvents.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#date_form" ).datepicker();
+    } );
+    </script>
+
+    <title>TimeInn Event Changes</title>
+    <script>
+        $(document).ready(() => {
+            //Load the HTML contents of the header into <header>
+            $("footer").load("./resources/footer.html");
+        });
+    </script>
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+
+
+    <a class="logo">
+        <img src="img/logo2.png" alt="logo">
+    </a>
+    <header class="eventHeader">
+        <!-- TODO AÑADIR A NUEVO EVENTO BOTON LAS PROPIEDADES DE ADDEVENT-->
+        <div class="box">
+            <a class="button_event" href="#popup1"><i class="fas fa-plus-square"></i><span>  </span>  Nuevo Evento </a>
+        </div>
+    </header>
+    <div class="goBackContainer">
+        <div class="goBackButton">
+          <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+    <main class="eventMain">
+        <div id="news_slider"> </div>
+        <div class="filter">
+            <div class="filter_container">
+                <div class="filter_content">
+                    <div class="filter_item">
+                        <div>Titulo</div><input type="text" id="titleFilter" name="title" placeholder="Titulo" required>
+                    </div>
+                    <div class="filter_item">
+                        <div>Precio</div><input type="text" id="priceFilter" name="price" placeholder="Precio" required>
+                    </div>
+                    <div class="filter_item">
+                        <div>Fecha</div><input type="text" id="dateFilter" name="date" placeholder="dd/mm/yyyy" required>
+                    </div>
+                    <div class="filter_item">
+                        <div>Hora</div><input type="time" id="timeFilter" name="time" placeholder="Hora" required>
+                    </div>
+                    <div class="filter_item">
+                        <div>Lugar</div><input type="text" id="placeFilter" name="location" placeholder="Lugar" required>
+                    </div>
+                    <div class="filterButton"><button class="addFilter">Filtrar</button>   <button class="delFilters">X</button></div>
+                </div>
+            </div>
+        </div>
+        <div id="news-portfolio">
+        </div>
+        <div>
+
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>Formulario de Nuevo Evento</h2>
+                    <a class="close" href="#">×</a>
+                    <div class="content-overlay">
+                      <form class="form" id="formOverlay">
+                          <div class="field">
+                              <label class="label">Titulo del evento:*</label>
+                              <input  id="title" class="inputform" type="text" name="titulo" placeholder="Titulo: Concierto Tomeu Penya" required>
+                          </div>
+                          <div class="field" >
+                              <label class="label">Lugar del evento:*</label>
+                              <input  id="location" class="inputform" type="text" name="lugar" placeholder="Lugar" required>
+                          </div>
+
+                          <div class="field">
+                          <label class="label">Fecha del evento:*</label>
+                          <input  class="inputform" id="date_form" type="text" name="date" placeholder="date" required>
+                          </div>
+
+                          <div class="field">
+                              <label class="label">Hora del evento:*</label>
+                              <input class="inputform" id="time_form" type="time" name="time" placeholder="time" required>
+                          </div>
+
+                          <div class="field">
+                              <label class="label">Precio del evento:*</label>
+                              <input  id="price" class="inputform" type="text" name="price" placeholder="ex: 9.5, gratis" required>
+
+                          </div>
+
+                          <div class="field">
+                              <label class="label">Descripción del evento*</label><br>
+                              <textarea  id="description" name="description" placeholder="inserte una descripcion" rows="4" cols="30" required></textarea>
+                          </div>
+
+                            <div class="field">
+                                <label class="label">Inserte una url de una imagen*</label>
+                                <input id="imgUrl" class="inputform" type="url" name="image" alt="imagen" value="https://www.freejpg.com.ar/asset/400/2f/2ff3/F100027510.jpg" required>
+                            </div>
+
+                          <div class="field">
+                              <button class="submit"> Crear Evento</button>
+                          </div>
+                          <div class="field">
+                              <button  class="editarBoton" id="boton_editar">Guardar Evento</button>
+                          </div>
+
+
+                          <div id="addElement"></div>
+
+                      </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="portfolio-events">
+        </div>
+    </main>
+
+    <footer></footer>
+
+
+</body>
+</html>
