@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="db3e7426-cccf-4e56-a49a-bd7ffdc10fcd" name="Default Changelist" comment="Creado html de newsletter y añadido video final">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/logo2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/logo2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/eventPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/renderEvents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/renderEvents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/project.css" afterDir="false" />
+    <list default="true" id="db3e7426-cccf-4e56-a49a-bd7ffdc10fcd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/project.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="feauture/MAITE4" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="20N0u9alCl12cFS8ejtgcI6Gc2M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Maite_Whatsappgram" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\FP\Segundo año\Proyectos DIW Y DWEC\TimeInn\resources" />
+      <recent name="C:\FP\Segundo año\Proyectos DIW Y DWEC\TimeInn\src\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\FP\Segundo año\Proyectos DIW Y DWEC\TimeInn\src" />
+      <recent name="C:\FP\Segundo año\Proyectos DIW Y DWEC\TimeInn\resources" />
+      <recent name="C:\FP\Segundo año\Proyectos DIW Y DWEC\TimeInn" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db3e7426-cccf-4e56-a49a-bd7ffdc10fcd" name="Default Changelist" comment="" />
+      <created>1635869958087</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635869958087</updated>
+      <workItem from="1635869959271" duration="605000" />
+      <workItem from="1636395754464" duration="1549000" />
+      <workItem from="1636471113274" duration="1448000" />
+      <workItem from="1636563201800" duration="4415000" />
+      <workItem from="1636643963117" duration="3762000" />
+      <workItem from="1636653062127" duration="3637000" />
+      <workItem from="1636663286096" duration="1085000" />
+      <workItem from="1636735639253" duration="2527000" />
+      <workItem from="1636827509512" duration="1271000" />
+      <workItem from="1637090334184" duration="2885000" />
+      <workItem from="1637093320663" duration="4599000" />
+      <workItem from="1637176211564" duration="4996000" />
+      <workItem from="1637339399585" duration="2055000" />
+      <workItem from="1637493029872" duration="3311000" />
+      <workItem from="1637527320408" duration="3610000" />
+      <workItem from="1637595971624" duration="316000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update README.md with WireFrame">
+      <created>1636395942895</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636395942895</updated>
+    </task>
+    <task id="LOCAL-00002" summary="workspace.xml">
+      <created>1636396588694</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636396588694</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Creado el logo y empezado la estructura de html del front">
+      <created>1636473701687</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636473701687</updated>
+    </task>
+    <task id="LOCAL-00004" summary="gap del css aumentado">
+      <created>1636571004015</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1636571004015</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Creado el footer y añadido html en eventPage y frontPage. Creado css. Falta ajustar imagen del logo.">
+      <created>1636594978923</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636594978923</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Cambiado el logo de color en el front page">
+      <created>1636595013377</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1636595013377</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Todo correcto hasta aquí">
+      <created>1636908267018</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1636908267018</updated>
+    </task>
+    <task id="LOCAL-00008" summary="añadido en data destacado para poder realizar destacado del mes">
+      <created>1637091772840</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637091772840</updated>
+    </task>
+    <task id="LOCAL-00009" summary="creado destacado del mes en data">
+      <created>1637178204189</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637178204189</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Template de destacados del mes realizado con un filter y un map. Ahora pinta solo aquellas que sean destacadas en el front">
+      <created>1637243655788</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637243655788</updated>
+    </task>
+    <task id="LOCAL-00011" summary="añadido 10 noticias en data.">
+      <created>1637244063404</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1637244063404</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Creado html de newsletter y añadido video final">
+      <created>1637346065637</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1637346065637</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Creado overlay del formulario, falta mejorar css">
+      <created>1637505113285</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1637505113285</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Cambiado borrar papelera por problemas al añadir un evento. El evento se añade correctamente y al borrar todos los elementos solo aparece el evento añadido cuando añadimos uno nuevo">
+      <created>1637524656792</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1637524656792</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Hamburguesa realizada y jquery del footer hecho">
+      <created>1637682918930</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1637682918930</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update README.md with WireFrame" />
+    <MESSAGE value="workspace.xml" />
+    <MESSAGE value="Creado el logo y empezado la estructura de html del front" />
+    <MESSAGE value="gap del css aumentado" />
+    <MESSAGE value="push del front slider" />
+    <MESSAGE value="Creado el footer y añadido html en eventPage y frontPage. Creado css. Falta ajustar imagen del logo." />
+    <MESSAGE value="Cambiado el logo de color en el front page" />
+    <MESSAGE value="push a develop" />
+    <MESSAGE value="Todo correcto hasta aquí" />
+    <MESSAGE value="añadido en data destacado para poder realizar destacado del mes" />
+    <MESSAGE value="creado destacado del mes en data" />
+    <MESSAGE value="Template de destacados del mes realizado con un filter y un map. Ahora pinta solo aquellas que sean destacadas en el front" />
+    <MESSAGE value="añadido 10 noticias en data." />
+    <MESSAGE value="Creado html de newsletter y añadido video final" />
+    <MESSAGE value="Creado overlay del formulario, falta mejorar css" />
+    <MESSAGE value="Cambiado borrar papelera por problemas al añadir un evento. El evento se añade correctamente y al borrar todos los elementos solo aparece el evento añadido cuando añadimos uno nuevo" />
+    <MESSAGE value="Creado jquery de footer.html en eventPage.html" />
+    <MESSAGE value="Hamburguesa realizada y jquery del footer hecho" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hamburguesa realizada y jquery del footer hecho" />
+  </component>
+</project>
