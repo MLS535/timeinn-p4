@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bfddb8114a.js" crossorigin="anonymous"></script>
     <script src="js/project.js"></script>
-    <script defer type="module" src="js/renderEvents.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
@@ -112,12 +111,14 @@
                             </div>
 
                           <div class="field">
-                              <button class="submit"> Crear Evento</button>
+                              <button class="submit" name="add"> Crear Evento</button>
+<!--                              <input type="submit" name="submit" value="Crear Evento" class="submit">-->
                           </div>
                           <div class="field">
-                              <button  class="editarBoton" id="boton_editar">Guardar Evento</button>
+                              <button  class="editarBoton" id="boton_editar" name="edit" >Guardar Evento</button>
+<!--                              <input type="submit" name="submit" value="Guardar Evento" class="editarBoton" id="boton_editar>-->
                           </div>
-
+<!---->
 
                           <div id="addElement"></div>
 
@@ -133,7 +134,7 @@
     </main>
 
     <footer></footer>
-
+    <script  src="js/eventosapi.js"></script>
 
 </body>
 </html>
