@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "mocha test",
-    "api-crud": "json-server --watch api_crud/crud.json",
-    "api_auth": "node api_auth/server/index.js"
+    "api_crud": "json-server --watch api_crud/crud.json",
+    "api_auth": "node api_auth/server/index.js",
+    "api_auth_dev": "nodemon api_auth/server/index.js"
   },
   "repository": {
     "type": "git",

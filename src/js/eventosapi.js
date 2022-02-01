@@ -16,8 +16,10 @@ async function getEvents() {
 }
 
 //Renderizar todos los eventos
-async function renderEvents() {
-    let events = await getEvents ();
+async function renderEvents(events = null) {
+    //Si eventos no existe, entonces cogerá la función get y si es un parametro que existe nos ç
+    // devolverá el propio elemento que hay dentro del parametro
+   events = events ? events : await getEvents ();
     let html = '';
     events.map ( post => {
         let htmlSegment = `
@@ -35,7 +37,7 @@ async function renderEvents() {
                 <div class="text">${post.description}</div>
             </div>
              <div class="buttons">
-<!--                <div class="edit"><i class="fas fa-pencil-alt"></i></div>-->
+
                  <div class="edit" data-id=${post.id}><button data-id=${post.id} class="edit-btn"><i class="fas fa-pencil-alt"></i></button></div>
               <div class="delete" data-id=${post.id}><button data-id=${post.id} class="delete-btn"><i class="fas fa-trash-alt"></i></button></div>
             </div>
@@ -159,6 +161,7 @@ formOverlay.addEventListener("submit", function (evt){
     if ( botonclickado === 'add' ){
         document.querySelector(".submit").style.display ="block";
         getNewEventData ( evt.target )
+
     }
     if ( botonclickado === 'edit' ){
         // let EventsId = evt.target.dataset;
@@ -181,7 +184,7 @@ new_event.addEventListener("click", function (){
 
 function editarEventos(eventosEditados, EventosID) {
     fetch(`http://localhost:3000/eventos/${EventosID}`, {
-        method: "PATCH",
+        method: "PUT",
         headers: {
             "Content-type": "application/json",
             "accept": "application/json"
@@ -204,3 +207,30 @@ function editarEventos(eventosEditados, EventosID) {
         })
     window.location.replace("eventPage.html#")
 }
+
+
+//TODO COGER EL EVENTO
+async function getFrontEvent(id) {
+   const data = await fetch(`http://localhost:3000/eventos/${id}`)
+        .then(response => response.json())
+        .then(json => json)
+    return data;
+
+}
+
+
+var filterOneElement = document.querySelector('.addFilter');
+
+filterOneElement.addEventListener('click', async function (e){
+
+  let valor = document.getElementById('idFilter').value;
+   const data = [await getFrontEvent(valor)]
+   await renderEvents(data);
+})
+
+
+var filterAllElements = document.querySelector('.delFilters');
+
+filterAllElements.addEventListener('click', async  function (){
+    renderEvents();
+})

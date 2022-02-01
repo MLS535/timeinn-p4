@@ -1,8 +1,6 @@
 
-
+const url = 'http://localhost:3000/eventos';
 async function getFrontEvents() {
-    let url = 'http://localhost:3000/eventos';
-
     try {
         //await bloqueja l’execució del codi fins que no es resolgui la instrucció actual
         let res = await fetch ( url );
@@ -42,29 +40,92 @@ async function renderFrontEvents() {
     }
 
     )
-    console.log(events);
+
     let container = document.querySelector( '#destacado' );
-    console.log(container);
     container.innerHTML = html;
 }
 
 
 window.addEventListener('DOMContentLoaded',()=>{
     renderFrontEvents();
-
+    frontEventsBigSize();
+    frontEventslittleSize();
 });
 
-async function getFrontEvent(id) {
-    let url = `http://localhost:3000/eventos/${id}`;
+function frontEventsBigSize(){
+    let html = '';
+    fetch(url)
+        .then((res) => {
+            if (!res.ok) {
+                throw new Error("HTTP error " + res.status);
+            }
+            return res.json()
+        })
+        .then((data) => {
+             data.filter(entry => entry.id)
+                .slice(0, 2).map(post => {
+                    let htmlSegment =
+                        `
+     <div class="indexEvent">
+         <img class="image" src="${post.imgUrl}" alt="${post.title}" />
+          <div class="content">
+                 <div class="title">${post.title}</div>
+              <div class="date-destacado"><i class="far fa-calendar-alt"></i> ${post.publication_date} </div>
+            <div ><i class="far fa-clock"></i> Hora: ${post.time}</div>
+            <div><i class="fas fa-hand-holding-usd"></i> Precio: ${post.price}</div>
+            <div><i class="fas fa-map-marked-alt"></i> ${post.location}</div>
+                <div class="text">${post.description}</div>
+            </div>
+      </div>
 
-    try {
-        //await bloqueja l’execució del codi fins que no es resolgui la instrucció actual
-        let res = await fetch ( url );
-        console.log(res.json());
-        return await res.json();
-    } catch (error) {
-        console.log ( error );
-    }
+    `
+                    html += htmlSegment;
+                    let container = document.querySelector( '#portfolio-events' );
+                    container.innerHTML = html;
+                    console.log(htmlSegment);
+            // ...use data...
+        })})
+        .catch(error => {
+        return  "Ha habido un error";
+        });
+
 }
-getFrontEvent(1);
-getFrontEvent(1);
+
+function frontEventslittleSize() {
+    let html = '';
+    fetch ( url )
+        .then ( (res) => {
+            if ( !res.ok ) {
+                throw new Error ( "HTTP error " + res.status );
+            }
+            return res.json ()
+        } )
+        .then ( (data) => {
+            data.filter ( entry => entry.id )
+                .slice ( 3, 5 ).map ( post => {
+                let htmlSegment =
+                    `
+     <div class="indexEvent2">
+        <div class="content-overlay">
+        <div class="title">${post.title}</div>
+              <div class="date-destacado"><i class="far fa-calendar-alt"></i> ${post.publication_date} </div>
+            <div ><i class="far fa-clock"></i> Hora: ${post.time}</div>
+            <div><i class="fas fa-hand-holding-usd"></i> Precio: ${post.price}</div>
+            <div><i class="fas fa-map-marked-alt"></i> ${post.location}</div>
+            <div class="text">${post.description}</div>
+        </div>
+        <img class="image" src="${post.imgUrl}" alt="${post.title}" />
+    </div>
+
+    `
+                html += htmlSegment;
+                let container = document.querySelector ( '#portfolio-events2' );
+                container.innerHTML = html;
+                console.log ( htmlSegment );
+                // ...use data...
+            } )
+        } )
+        .catch ( error => {
+            return "Ha habido un error";
+        } );
+}
