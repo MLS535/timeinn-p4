@@ -30,6 +30,7 @@ if (typeof resultPassword == "string") {
 } else {
     document.getElementById("errorpasswd1").innerHTML = "";
 }}
+
 document.getElementById("passwd1").onblur = function () {
 validarPasswdSalir();
 }

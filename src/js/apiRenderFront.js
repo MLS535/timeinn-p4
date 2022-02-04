@@ -1,3 +1,4 @@
+import {renderCardsNews, getTokenCookie} from "./apiLogin.js";
 
 const url = 'http://localhost:3000/eventos';
 async function getFrontEvents() {
@@ -50,6 +51,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     renderFrontEvents();
     frontEventsBigSize();
     frontEventslittleSize();
+    cardContentfront();
 });
 
 function frontEventsBigSize(){
@@ -121,11 +123,56 @@ function frontEventslittleSize() {
                 html += htmlSegment;
                 let container = document.querySelector ( '#portfolio-events2' );
                 container.innerHTML = html;
-                console.log ( htmlSegment );
+
                 // ...use data...
             } )
         } )
         .catch ( error => {
             return "Ha habido un error";
         } );
+}
+
+
+function cardContentfront() {
+    let html = '';
+    fetch ( url )
+        .then ( (res) => {
+            if ( !res.ok ) {
+                throw new Error ( "HTTP error " + res.status );
+            }
+            return res.json ()
+        } )
+        .then ( (data) => {
+            data.map ( post => {
+                let htmlSegment =
+                    `
+      <div class="card">
+                    <div class="card-img">
+                        <img src="${post.imgUrl}" alt="">
+                        <img class="blur" src="" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>${post.title}</h2>
+                        <div class="date-destacado"><i class="far fa-calendar-alt"></i> ${post.publication_date} </div>
+                        <div ><i class="far fa-clock"></i> Hora: ${post.time}</div>
+                        <div><i class="fas fa-hand-holding-usd"></i> Precio: ${post.price}</div>
+                        <div><i class="fas fa-map-marked-alt"></i> ${post.location}</div>
+                        <p class="description_news">${post.description}<p>
+                    </div>
+                </div>
+    `
+                html += htmlSegment;
+                let container = document.querySelector ( '.event-content' );
+                container.innerHTML = html;
+                console.log ( htmlSegment );
+
+            } )
+        } )
+        .catch ( error => {
+            return "Ha habido un error";
+        } );
+}
+
+if(document.cookie.startsWith ( `token=${getTokenCookie()}` )){
+   renderCardsNews()
 }

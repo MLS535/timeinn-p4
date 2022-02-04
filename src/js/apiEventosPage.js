@@ -26,11 +26,13 @@ async function renderEvents(events = null) {
    <div class="event" data-id="${post.id}">
          <img class="image" src="${post.imgUrl}" alt="${post.title}" />
           <div class="content-overlay">
+                
                 <div class="title">${post.title}</div>
                 <div class="event_favicon">
                  <div class="date-destacado"><i class="far fa-calendar-alt"></i> <a class="dates">${post.publication_date}</a> </div>
             <div class="hora"><i class="far fa-clock"></i> Hora: <a class="hour">${post.time}</a></div>
             <div class="precio"><i class="fas fa-hand-holding-usd"></i> Precio: <a class="price">${post.price}</a>€</div>
+             <div class="precio"><i class="fas fa-passport"></i> Id: <a class="price">${post.id}</a></div>
             <div class="location"><i class="fas fa-map-marked-alt"></i> <a class="place">${post.location}</a></div>
                 </div>
 
@@ -68,13 +70,18 @@ portfolioEvents.addEventListener("click", function (e) {
             .then(resp => resp.url)
             .then(function (url) {
                 splitUrl = url.split('/')
+                console.log (splitUrl);
                 urlId = splitUrl[splitUrl.length - 1]
+                console.log (urlId);
                 allDeleteBtns = document.querySelectorAll(".delete-btn")
+
                 let EventsToDelete;
+
                 allDeleteBtns.forEach(function (EventsButton) {
                     if (EventsButton.dataset.id == urlId) {
                         EventsButton = document.querySelector(".event");
                         EventsToDelete = EventsButton
+                        console.log (EventsToDelete);
                     }
                 })
                 EventsToDelete.remove()
@@ -112,6 +119,7 @@ function getNewEventData(NewEventData) {
                  <div class="date-destacado"><i class="far fa-calendar-alt"></i> <a class="dates">${post.publication_date}</a> </div>
             <div class="hora"><i class="far fa-clock"></i> Hora: <a class="hour">${post.time}</a></div>
             <div class="precio"><i class="fas fa-hand-holding-usd"></i> Precio: <a class="price">${post.price}</a>€</div>
+            <div class="precio"><i class="fas fa-passport"></i> Id: <a class="price">${post.id}</a></div>
             <div class="location"><i class="fas fa-map-marked-alt"></i> <a class="place">${post.location}</a></div>
                 </div>
 
