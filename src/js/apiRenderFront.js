@@ -52,6 +52,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     frontEventsBigSize();
     frontEventslittleSize();
     cardContentfront();
+
 });
 
 function frontEventsBigSize(){
@@ -173,6 +174,13 @@ function cardContentfront() {
         } );
 }
 
+
+//COOKIE
 if(document.cookie.startsWith ( `token=${getTokenCookie()}` )){
    renderCardsNews()
 }
+
+
+
+
+

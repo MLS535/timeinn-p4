@@ -4,16 +4,16 @@ function checkData(username, password, errores){
     var dataInLocalStorage = localStorage.getItem(localStorageKeyName);
     users1 = JSON.parse(dataInLocalStorage);
      let resultado =  users1.find( a => (a.username === username ||a.email === username) && a.password === password);
-     if ( resultado ){
+    if ( resultado ){
          //todo Aquí añadir funcion de la cookie
          storeValues();
          /* TODO mensajes del login correcto
              redireccionamos a front page y se muestra un mensaje como “Hola, Maria” (por ejemplo, si la usuaria es Maria) */
-         window.location.replace("index.html");
+        window.location.replace("index.html");
    }else
         /* TODO mensajes del login incorrecto
             Saldrá un mensaje de error en el formulario (los errores tendrán el color de error de la Paleta de Colores) */
-       errores.innerHTML = 'Usuario o contraseña erronea'
+        errores.innerHTML = 'Usuario o contraseña erronea'
    }
 
    var submit = document.querySelector('.loginButton');

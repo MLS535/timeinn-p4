@@ -135,6 +135,7 @@ function getNewEventData(NewEventData) {
     `
 
             )})
+
 //Cerramos el formulario una vez creado el evento
     window.location.replace("eventPage.html#");
     title.value = "";

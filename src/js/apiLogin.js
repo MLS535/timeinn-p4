@@ -9,7 +9,7 @@ loginButton?.addEventListener ( 'click', async function (e) {
 } )
 
 
-async function getUsers(email, password) {
+ async function getUsers(email, password) {
 
     const login = "http://localhost:3001/auth/login";
 
@@ -26,6 +26,8 @@ async function getUsers(email, password) {
             console.log ( err );
         } );
     document.cookie = `token=${token}; path=/; expires=${expiry.toGMTString ()}`
+    window.location.replace("index.html")
+
 }
 
 export const getTokenCookie =  function () {
@@ -47,6 +49,7 @@ async function generateNewsRender() {
             if ( !res.ok ) {
                 throw new Error ( "HTTP error " + res.status );
             }
+
            return res.json ()
 
         } ).catch ( error => {
