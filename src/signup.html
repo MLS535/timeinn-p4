@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://kit.fontawesome.com/bfddb8114a.js" crossorigin="anonymous"></script>
-    <!--    <script src="js/script.js"></script>-->
+        <script src="js/script.js"></script>
     <!--    <script src="js/validationSignup.js" type="module"></script>-->
     <script defer src="js/apiRegister.js"></script>
     <!--    <script defer type="module" src="js/validation.mjs"></script>-->
@@ -16,7 +16,7 @@
 <!-- TODO crear esqueleto del signup -->
 
 <div class="signup">
-    <div class="logo"><img src="img/logo2.png" alt="logo"></div>
+   <a href="index.html"> <div class="logo"><img src="img/logo2.png" alt="logo"></div></a>
     <div class="image"></div>
     <div class="signup-form">
         <h1 class="title">Sign Up</h1>
@@ -33,22 +33,14 @@
             <!--            </div>-->
             <div class="email">
                 <label for="email">Email</label><br/>
-                <input id="email" type="email" name="email" placeholder="Correo electronico" title="aaaaa@bbbbb.ccc:
-              - aaaaa: solo la primera letra en mayúscula y el resto en minúscula
-              - bbbbb: entre 5 y 10 minusculas
-              - ccc: Solo pudeden ser com, net o gov
-              - Solo puede haber una @ y un punto" required/>
+                <input id="email" type="email" name="email" placeholder="Correo electronico"  required/>
                 <div id="erroremail"></div>
             </div>
             <!-- TODO Crear un boton que te permita visualizar la contraseña -->
             <div class="password">
                 <!--                for="password"-->
                 <label>Contraseña</label><br/>
-                <input id="passwd1" type="password" name="password" placeholder="Contraseña" title="Requisitos:
-              - Longitud mínima de siete caracteres
-              - Incluir letras mayúsculas y minúsculas
-              - Incluir números
-              - Incluir caracteres espespeciales (por ejemplo, !, $, %, &, etc.)" required/>
+                <input id="passwd1" type="password" name="password" placeholder="Contraseña"  required/>
                 <span class="passwd1"><i class="fas fa-eye"></i></span>
                 <div id="errorpasswd1"></div>
             </div>

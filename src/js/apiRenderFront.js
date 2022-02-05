@@ -85,7 +85,6 @@ function frontEventsBigSize(){
                     html += htmlSegment;
                     let container = document.querySelector( '#portfolio-events' );
                     container.innerHTML = html;
-                    console.log(htmlSegment);
             // ...use data...
         })})
         .catch(error => {
@@ -165,7 +164,6 @@ function cardContentfront() {
                 html += htmlSegment;
                 let container = document.querySelector ( '.event-content' );
                 container.innerHTML = html;
-                console.log ( htmlSegment );
 
             } )
         } )
@@ -176,7 +174,9 @@ function cardContentfront() {
 
 
 //COOKIE
-if(document.cookie.startsWith ( `token=${getTokenCookie()}` )){
+let checkcookie= document.cookie.startsWith ( `token=${getTokenCookie()}` )
+console.log (checkcookie);
+if(checkcookie){
    renderCardsNews()
 }
 
