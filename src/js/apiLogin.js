@@ -5,6 +5,7 @@ let errorbutton = document.querySelector ( '#erroreslogin' );
 let today = new Date ();
 let expiry = new Date ( today.getTime () + 7 * 24 * 3600 * 1000 );
 
+
 loginButton?.addEventListener ( 'click', async function (e) {
     await getUsers ( emailLogin.value, passwordLogin.value )
 
@@ -34,6 +35,7 @@ async function getUsers(email, password) {
         document.cookie = `token=${token}; path=/; expires=${expiry.toISOString()}`
         checkData ( emailLogin.value, passwordLogin.value );
         errorbutton.innerHTML = '';
+
         window.location.replace ( "index.html" )
     }
 }
